@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Magawa Secondary Portal</title>
+  <title>KAWALE PRIVATE SECONDARY Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -13,7 +13,7 @@
 
     /* Body - Full view height, professional background */
     body {
-        background: #e9ebee;
+        background: #317873;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         display: flex;
         justify-content: center;
@@ -442,7 +442,6 @@
 </div>
 
 <div id="initialPage" class="page">
-     <img src="https://raw.githubusercontent.com/kawalepvt/kw/main/logo.png" alt="School Logo" class="logo">
     <h1><p style="font-size:28px;">KAWALE PVT SECONDARY SCHOOL</p></h1>
     <h2>EXAM PORTAL</h2>
     <label for="selectedForm">Select Class/Form</label>
@@ -471,8 +470,7 @@
     <button class="back-btn" onclick="handleBriefBack()" style="position: absolute; top: 10px; left: 10px; width: auto; padding: 5px 10px; max-width: none !important; margin: 0;">Back</button>
 
     <header id="briefReportHeader" style="width: 100%;">
-       <img src="https://raw.githubusercontent.com/kawalepvt/kw/main/logo.png" class="logo" alt="School Logo">     
-       <div id="briefReportHeaderRight">
+            <div id="briefReportHeaderRight">
             <h3>KAWALE PVT SECONDARY SCHOOL</h3>
             Private Bag 189,<br>
             LILONGWE.<br>
@@ -521,8 +519,7 @@
     <button class="back-btn" onclick="handleProgressBack()" style="position: absolute; top: 10px; left: 10px; width: auto; padding: 5px 10px; max-width: none !important; margin: 0;">Back</button>
 
     <header id="reportHeader" style="width: 100%;">
-	<img src="https://raw.githubusercontent.com/kawalepvt/kw/main/logo.png" class="logo" alt="School Logo">    
-        <div id="reportHeaderRight">
+	    <div id="reportHeaderRight">
             <h3>KAWALE PVT SECONDARY SCHOOL</h3>
             Private Bag 189,<br>
             Lilongwe.<br>
@@ -771,7 +768,7 @@
 
 <script>
 // --- GITHUB CONSTANTS ---
-const GITHUB_USER = 'kawalepvt';
+const GITHUB_USER = 'magawass';
 const GITHUB_REPO = 'kw';
 const CONFIG_FILE = 'config.json';
 const ADMIN_PASSWORD = '001'; // Placeholder for security testing/local use
@@ -802,7 +799,7 @@ const ALL_SUBJECTS = Object.keys(SUBJECT_MAP); // Full names used for internal l
 const BASE_HEADERS = ["STUDENT'S NAME", "Exam Number", "Date of Birth"];
 const ALL_HEADERS = [...BASE_HEADERS, ...ALL_SUBJECTS];
 const ALL_CLASSES = ['form1', 'form2', 'form3', 'form4'];
-const DEFAULT_TEACHER = 'TBA';
+const DEFAULT_TEACHER = '-';
 const API_BASE = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/`;
 
 // Grade boundary definitions
